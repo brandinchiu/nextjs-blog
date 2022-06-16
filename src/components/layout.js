@@ -11,7 +11,7 @@ export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
       <Head>
-        <link rel='icon' href='/favicon.ico' />
+        <link rel='icon' href='/public/favicon.ico' />
         <meta
           name="description"
           content="Tutorial examples working with Next.js"
@@ -40,7 +40,7 @@ export default function Layout({ children, home }) {
           </div>
         ) : (
           <div>
-            <Link href='/'>
+            <Link href='/Users/misfitpixel/Development/projects/misfitpixel/nextjs-blog/public'>
               <a>
                 <Image
                   priority
@@ -53,7 +53,7 @@ export default function Layout({ children, home }) {
               </a>
             </Link>
             <h2 className={utilStyles.headingLg}>
-              <Link href='/'>
+              <Link href='/Users/misfitpixel/Development/projects/misfitpixel/nextjs-blog/public'>
                 <a className={utilStyles.colorInherit}>{name}</a>
               </Link>
             </h2>
@@ -65,7 +65,7 @@ export default function Layout({ children, home }) {
       </main>
       {!home && (
         <div className={styles.backToHome}>
-          <Link href='/'>
+          <Link href='/Users/misfitpixel/Development/projects/misfitpixel/nextjs-blog/public'>
             <a>← Back to home</a>
           </Link>
         </div>
